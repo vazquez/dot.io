@@ -7,7 +7,6 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8888,
                     base: 'www-root'
                 }
             }
@@ -15,10 +14,9 @@ module.exports = function(grunt) {
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-    require('load-grunt-tasks')(grunt);
-    // grunt.loadNpmTasks('grunt-devserver');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['']);
+    grunt.registerTask('default', ['connect']);
 
 };
