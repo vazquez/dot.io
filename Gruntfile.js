@@ -4,10 +4,18 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        connect: {
+            server: {
+                options: {
+                    port: 8888,
+                    base: 'www-root'
+                }
+            }
+        }
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-    // require('load-grunt-tasks')(grunt);
+    require('load-grunt-tasks')(grunt);
     // grunt.loadNpmTasks('grunt-devserver');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
