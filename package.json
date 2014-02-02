@@ -2,6 +2,7 @@
   "name": "dotio",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "load-grunt-tasks": "~0.3.0"
   }
 }
