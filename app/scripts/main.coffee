@@ -1,0 +1,2 @@
+jQuery ->
+  $('.hero-unit').fadeIn();
