@@ -1,17 +1,17 @@
 body
-    // background: #c01b17//#053640
     box-sizing: border-box
     moz-box-sizing: border-box
+    margin: 0
+    padding: 0
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     color: #EFEFEF
     font-size: 16px
-    background-color: #c01b17
-    background-image: linear-gradient(#c01b17, #3889C0)
+    background-color: #f4f3ef
+    // background-image: linear-gradient(#c01b17, #3889C0)
     // background-image: linear-gradient(#c01b17, #CDCBC3)
     // background-image: linear-gradient(#053640, #3889C0)
-    background-repeat: no-repeat
-    background-attachment: fixed
-
+    // background-repeat: no-repeat
+    // background-attachment: fixed
 
     .browsehappy
         margin: 0.2em 0
@@ -22,17 +22,27 @@ body
     .hero-unit
         margin: 0 auto
         width: 100%
-        padding: 3.75em 1em //60px 16px
+        min-height: 650px
+        padding: 2em 1em 0 1em//60px 16px
+        img
+            width: 200px
+            border-radius: 50%
+            margin: 0 auto
+            display: block
         h1
             font-family: "kulturista-web"
-            font-weight: 100
-            font-size: 5em //80px
+            font-weight: 300
+            font-size: 2em //80px
             line-height: 1
-            color: #DDD
+            color: #333
+            // text-shadow: 0 10px 25px rgba(0,0,0,0.5)
+            text-align: center
             a
                 text-decoration: none
                 color: inherit
-                border-bottom: 1px dotted white
+                border-bottom: 1px dotted #333
                 transition: border-bottom 0.3s ease-in
                 &:hover
                     border-bottom: 1px dotted transparent
+    .test
+        height: 1000px
