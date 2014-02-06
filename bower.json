@@ -5,5 +5,7 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery-fittext.js": "*"
+  }
 }
