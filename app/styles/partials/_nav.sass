@@ -11,13 +11,19 @@ nav
     padding: .8em 1em
     color: white
     a
-      color: inherit
       outline: none
       text-decoration: none
       font-size: 1.05em
       border-bottom: 1px dotted transparent
       transition: border-bottom 0.2s ease-in, color 0.2s ease-in
-      +adelle(100, rgba(white,0.7))
+      +adelle(400, $base-color)
       &:hover
-        border-bottom: 1px dotted white
-        color: white
+        border-bottom: 1px dotted $base-color
+      &.active
+        border-bottom: 1px dotted $base-color
+      &.landing
+        transition: border-bottom 0.2s ease-in, color 0.2s ease-in
+        +adelle(200, rgba(white,0.7))
+        &:hover
+          border-bottom: 1px dotted white
+          color: white
