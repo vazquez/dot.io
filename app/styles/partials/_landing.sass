@@ -1,0 +1,15 @@
+.hero-unit
+  margin: 4em 0 0 1em
+  article
+    width: 100%
+    font-size: 0px // To hide text before
+    line-height: 1.8em //32px
+    color: #DDD
+    +kulturista(100, white)
+    a
+      text-decoration: none
+      color: inherit
+      border-bottom: 1px dotted white
+      transition: border-bottom 0.3s ease-in
+      &:hover
+        border-bottom: 1px dotted transparent
