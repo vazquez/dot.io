@@ -1,4 +1,5 @@
 @import "compass/reset"
+@import "compass/css3/opacity"
 @import "mixins"
 
 body
@@ -22,6 +23,13 @@ body
 		padding: 0.2em 0
 
 	nav
+		position: relative
+		top: -2.5em
+		transition: top 1s ease-in, opacity 1s ease-in
+		+opacity(0)
+		&.visible
+			top: 0
+			+opacity(1)
 		ul li
 			display: inline-block
 			padding: .5em 1em
@@ -31,8 +39,8 @@ body
 				text-decoration: none
 				font-size: 1.05em
 				border-bottom: 1px dotted transparent
-				transition: border-bottom 0.3s ease-in, color 0.3s ease-in
-				+kulturista(300, rgba(255,255,255,0.7))
+				transition: border-bottom 0.2s ease-in, color 0.2s ease-in
+				+adelle(100, rgba(255,255,255,0.7))
 				&:hover
 					border-bottom: 1px dotted white
 					color: white
