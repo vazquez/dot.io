@@ -10,4 +10,5 @@ A new personal website featuring:
 - Compass
 - HAML (coming up)
 - jQuery
+- Goldilocks
 - No CMS
