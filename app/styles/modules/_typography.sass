@@ -23,3 +23,27 @@ p
     family: Georgia, serif
   color: #333
   max-width: 30em
+
+::-moz-selection
+  color: $brand-color
+  background: rgba(white, 0.9)
+::selection
+  color: $brand-color
+  background: rgba(white, 0.9)
+
+nav ul::-moz-selection
+  background: rgba(white, 0)
+nav ul::selection
+  background: rgba(white, 0)
+
+nav ul li::-moz-selection
+  background: rgba(white, 0)
+nav ul li::selection
+  background: rgba(white, 0)
+
+nav ul li a::-moz-selection
+  color: rgba(white,0.7)
+  background: rgba(white, 0)
+nav ul li a::selection
+  color: rgba(white,0.7)
+  background: rgba(white, 0)
