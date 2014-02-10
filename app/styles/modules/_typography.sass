@@ -22,13 +22,16 @@ h1, p
   line-height: $base-line-height
 
 p
+  margin: 1em 0 0 0
+  max-width: $base-max-width
   font:
-    size: 2em
+    size: 1.8em
     family: 'adelle'
     weight: $regular
-  color: #333
-  max-width: $base-max-width
-  margin: 1em 0 0 0
+  color: #454545
+  text-align: center
+  @media screen and (min-width: 30em) and (max-width: 63.236em)
+    font-size: 1.3em
 
 ::-moz-selection
   color: $brand-color
