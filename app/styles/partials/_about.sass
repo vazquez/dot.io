@@ -1,6 +1,14 @@
 .about
-  margin: 5em 0
+  margin: 1em 0
   h1
+    // +proxima-heading()
+    margin: 0 0 0.8em 0
+    font:
+      family: "kulturista-web"
+      weight: $regular
+      size: 6em
     text-align: center
-    font-size: 7em
-    +proxima-heading()
+    letter-spacing: -0.03em
+    background: linear-gradient(lighten($brand-color, 20%), $accent-color)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
