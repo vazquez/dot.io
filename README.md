@@ -3,7 +3,7 @@ dot.io
 
 A new personal website featuring:
 
-- Jeckyll
+- Jekyll
 - Yeoman
 - Grunt
 - Bower
