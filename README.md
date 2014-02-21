@@ -3,12 +3,13 @@ dot.io
 
 A new personal website featuring:
 
+- Jeckyll
 - Yeoman
 - Grunt
 - Bower
 - Sass 3
 - Compass
-- HAML (coming up)
+- CoffeeScript
 - jQuery
-- Goldilocks
+- Goldilocks (with some adjustments)
 - No CMS
