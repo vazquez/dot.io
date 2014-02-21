@@ -1,48 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css({app,.tmp}) /css/main.css -->
+  <!-- Syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- endbuild -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script></script>
+  <script type="text/javascript" src="//use.typekit.net/meu1qwn.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    </head>
-    <body>
+</head>
+<body class="landing">
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+            <nav class="landing">
+              <ul>
+                <li><a class="landing" href="about">About</a></li>
+                <li><a class="landing" href="#">Projects</a></li>
+                <li><a class="landing" href="#">Blog</a></li>
+                <li><a class="landing" href="#">Contact</a></li>
+              </ul>
+            </nav>
 
-          {{ content }}
+            {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                vazquez<br />
-                <a href="mailto:2ricardo.vazquez@gmail.com">2ricardo.vazquez@gmail.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+            <!-- build:js scripts/vendor.js -->
+            <!-- bower:js -->
+            <script src="bower_components/jquery/jquery.js"> </script>
+            <script src="bower_components/jquery-fittext.js/jquery.fittext.js"> </script>
+            <!-- endbower -->
+            <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) /js/scripts.js -->
-    <script src="/js/main.js"></script>
-    <!-- endbuild -->
-    </body>
-</html>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+              (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+              e.src='//www.google-analytics.com/analytics.js';
+              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+              ga('create','UA-XXXXX-X');ga('send','pageview');
+            </script>
+
+            <!-- build:js({app,.tmp}) /js/scripts.js -->
+            <script src="/js/main.js"></script>
+            <!-- endbuild -->
+          </body>
+          </html>
