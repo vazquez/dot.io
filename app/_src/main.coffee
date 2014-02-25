@@ -7,7 +7,7 @@ $ ->
   $(".hero-unit article").eq(2).hide().delay(2500).fadeIn 1000
   $(".hero-unit article").eq(3).hide().delay(3500).fadeIn 1000
   $(".hero-unit article").fitText 1.7,
-    minFontSize: "30px"
+    minFontSize: "20px"
 
   $(".heading").fitText()
   $("nav").delay(2000).addClass "visible"
