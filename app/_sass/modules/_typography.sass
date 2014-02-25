@@ -1,5 +1,6 @@
 // Font weights
 $light: 100
+$normal: 300
 $regular: 400
 $bold: 600
 
@@ -22,12 +23,12 @@ h1, p
   line-height: $base-line-height
 
 h1
-  margin: 0 0 0.3em 0
+  margin: 0
   font:
-    family: "kulturista-web"
-    weight: $regular
+    family: "kulturista-web", sans-serif
+    weight: $light
     size: 6em
-  letter-spacing: -0.04em
+  letter-spacing: -0.07em
   text-align: center
   background: linear-gradient(#FF241F, #4AB6FF)
   -webkit-background-clip: text
@@ -43,9 +44,9 @@ p
   max-width: $base-max-width
   font:
     size: 1.6em
-    family: 'adelle'
-    weight: $regular
-  color: #454545
+    family: 'adelle', sans-serif
+    weight: 300
+  color: #333
   &.small
     font:
       size: .999em
