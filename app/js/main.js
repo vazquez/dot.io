@@ -8,7 +8,7 @@
     $(".hero-unit article").fitText(1.7, {
       minFontSize: "20px"
     });
-    $(".heading").fitText();
+    $(".heading").fitText(0.9);
     $("nav").delay(2000).addClass("visible");
   });
 
