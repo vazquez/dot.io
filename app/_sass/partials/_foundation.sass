@@ -2,6 +2,7 @@ html
   overflow-y: scroll
 
 body
+  position: relative
   box-sizing: border-box
   moz-box-sizing: border-box
   font-family: $base-font-family
@@ -9,6 +10,16 @@ body
   font-size: $base-font-size
   color: $spotlight-color
   background: #FFFFFD
+  &:before, &:after
+    content: ""
+    position: absolute
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($brand-color), to($accent-color))
+    background-image: -webkit-linear-gradient($brand-color, $accent-color)
+    background-image: -moz-linear-gradient($brand-color, $accent-color)
+    background-image: -o-linear-gradient($brand-color, $accent-color)
+    top: 0
+    bottom: 0px
+    width: 8px
   &.landing
     background-color: $brand-color
     background-image: linear-gradient($brand-color, $accent-color)
@@ -16,3 +27,5 @@ body
     background-attachment: fixed
     // background-image: linear-gradient(#c01b17, #CDCBC3)
     // background-image: linear-gradient(#053640, #3889C0)
+    &:before, &:after
+      position: relative // hiding border
